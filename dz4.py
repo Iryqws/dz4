@@ -1,11 +1,20 @@
-class Mom:
+class Parents1:
     def weight(self):
-     print(49)
-
-class Dad:
+     print(66)
+class Parents2:
     def height(self):
      print(180)
 
-class Children(Mom, Dad):
+class Mom(Parents1):
+    def weight(self):
+     print(49)
+    height = 170
+
+class Dad(Parents2):
+    def height(self):
+     print(180)
+    weight = 55
+
+class Child(Mom, Dad):
     weight = 35
     age = 8
